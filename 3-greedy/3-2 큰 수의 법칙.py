@@ -28,4 +28,8 @@ data.sort(reverse = True)
 num1 = data[0]
 num2 = data[1]
 
-result = num1*K + num2 + num1*K
+count = M//(K+1)
+remain = M % (K+1)
+result = num1*count + num2*count + remain*num1
+
+print(result)
