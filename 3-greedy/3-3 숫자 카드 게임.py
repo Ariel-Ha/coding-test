@@ -1,19 +1,24 @@
+from email.policy import default
+
+
 N, M = map(int, input().split())
 
 nnum = []
 nnum_min = []
 
-for n in range(1,N):
+for n in range(1,N+1):
     for m in range(0, M):
         nnum.append(input().split())
-        nnum_min = min(nnum[m])
+        nnum_min.append(min(nnum[m], default=0))
         m += 1
         n += 1
-    if n==N:
-        break
+
+    # if n==N:
+    #     break
     
 print(nnum)
 print(nnum_min)
+print(max(int(nnum_min)))
 
 '''
 point
