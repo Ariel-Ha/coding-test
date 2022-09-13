@@ -55,5 +55,6 @@ result += (n-1) #result = result(5) + (2-1)
 print(result)
 
 '''
+# point 
 - result += (n - target) 과정이 아직 정확히 이해되지 않음
 '''
