@@ -1,6 +1,5 @@
 from email.policy import default
 
-
 N, M = map(int, input().split())
 
 nnum = []
